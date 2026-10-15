@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Θ|έρως · Cocktail &amp; wine bar in Pefki, North Evia</title>
+<meta name="description" content="Θ|έρως is a seaside cocktail and wine bar on the waterfront in Pefki, North Evia. Coffee in the morning, sunset drinks and cocktails after dark.">
+<meta name="theme-color" content="#F5F1E9">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Θ|έρως">
+<meta property="og:title" content="Θ|έρως · Cocktail &amp; wine bar in Pefki, North Evia">
+<meta property="og:description" content="Θ|έρως is a seaside cocktail and wine bar on the waterfront in Pefki, North Evia. Coffee in the morning, sunset drinks and cocktails after dark.">
+<meta property="og:image" content="assets/theros-hero-6.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preload" as="image" href="assets/theros-hero-6.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Karla:wght@300;400;500;600&family=Noto+Sans:wght@300;400;500;600&display=swap&subset=latin,greek" rel="stylesheet">
+<style>
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: #F5F1E9; color: #1B1B19; font-family: Karla, 'Noto Sans', system-ui, sans-serif; overflow-x: hidden; }
+  * { box-sizing: border-box; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: #4F7466; }
+  button { font-family: Karla, 'Noto Sans', system-ui, sans-serif; }
+  ::selection { background: #C9DCD3; }
+  .gal::-webkit-scrollbar { height: 2px; }
+  .gal::-webkit-scrollbar-thumb { background: rgba(255,255,255,.35); }
+  .tile img { transition: transform .9s cubic-bezier(.2,.7,.2,1); }
+  .tile:hover img { transform: scale(1.04); }
+  @media (max-width: 768px) { .tile { aspect-ratio: 3/4 !important; } #top { min-height: min(78svh, 680px) !important; } }
+  .hourbox .tab { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; text-align: left; padding: clamp(14px,2.2vw,20px) clamp(10px,1.6vw,18px); border: 0; border-bottom: 2px solid transparent; background: transparent; color: #6B655B; cursor: pointer; transition: background .3s ease, color .3s ease, border-color .3s ease; }
+  .hourbox .tab:hover { color: #1B1B19; }
+  .hourbox .tab:focus-visible { outline: 2px solid #4F7466; outline-offset: -2px; }
+  .hourbox.h0 .tab[data-i="0"], .hourbox.h1 .tab[data-i="1"], .hourbox.h2 .tab[data-i="2"] { background: #EFE9DC; color: #1B1B19; border-bottom-color: #4F7466; }
+  .hourbox .frm { opacity: 0; pointer-events: none; transition: opacity .7s ease; }
+  .hourbox.h0 .frm[data-i="0"], .hourbox.h1 .frm[data-i="1"], .hourbox.h2 .frm[data-i="2"] { opacity: 1; pointer-events: auto; }
+  .st-root { container-type: inline-size; container-name: st; }
+  .st-mbar-wrap { display: none; }
+  @keyframes stZoom { from { scale: 1.1; } to { scale: 1; } }
+  @keyframes stZoomD { from { scale: 1.05; } to { scale: 1; } }
+  @keyframes stUp { from { opacity: 0; translate: 0 22px; } to { opacity: 1; translate: 0 0; } }
+  @container st (min-width: 761px) and (max-width: 1000px) {
+    .st-tiles-g { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+  }
+  @container st (max-width: 760px) {
+    .st-hdr { padding: 20px 20px 0 !important; }
+    .st-root #top { min-height: 92svh !important; }
+    .st-hero-img { object-position: 70% 100% !important; translate: 0 var(--hy, 0px); }
+    .st-hero-c { padding: 0 20px 36px !important; }
+    .st-h1 { font-size: min(22cqi, 96px) !important; }
+    .st-tag { margin: 22px 0 22px !important; font-size: 15px !important; }
+    .st-hours { padding-top: 28px !important; }
+    .st-wrap { padding: 0 12px !important; }
+    .st-dayrow { padding: 0 8px 16px !important; }
+    .hourbox .tab { padding: 14px 10px !important; }
+    .st-tabl { font-size: 13px !important; }
+    .st-fig { height: auto !important; aspect-ratio: 4/5; touch-action: pan-y; }
+    .st-fig .frm[data-i="1"] img { object-position: 0% 50% !important; transform: scale(1.2); transform-origin: 0% 62%; }
+    .st-fig .frm[data-i="0"] img { object-position: 50% 62% !important; }
+    .st-cap { padding: 18px !important; }
+    .st-capt { font-size: 21px !important; }
+    .st-tiles { padding: 12px 0 0 !important; }
+    .st-tiles-g { grid-template-columns: minmax(0,1fr) minmax(0,1fr) !important; gap: 12px !important; padding: 0 12px !important; }
+    .st-tiles-g .tile { aspect-ratio: 4/5 !important; }
+    .st-tiles-g .tile:nth-child(1) img { object-position: 42% 30% !important; }
+    .st-tiles-g .tile:nth-child(2) img { inset: 0 !important; width: 100% !important; height: 100% !important; object-position: 50% 42% !important; }
+    .st-tiles-g .tile:nth-child(3) img { object-position: 50% 58% !important; }
+    .st-tiles-g .tile:nth-child(4) img { object-position: 38% 45% !important; }
+    .st-menu { padding: 64px 12px 40px !important; }
+    .st-menu-g { grid-template-columns: minmax(0,1fr) !important; }
+    .st-panel { min-height: 0 !important; padding: 36px 24px 32px !important; gap: 44px !important; }
+    .st-ctc { font-size: 46px !important; }
+    .st-mbtn { padding: 16px 18px 16px 20px !important; gap: 10px !important; }
+    .st-menu-ph { min-height: 0 !important; aspect-ratio: 4/5; }
+    .st-menu-ph img { object-position: 50% 78% !important; }
+    .st-dark { padding: 44px 0 28px !important; }
+    .st-dark-h { padding: 0 20px !important; }
+    .st-dark-t { font-size: 30px !important; }
+    .st-root .gal { gap: 12px !important; padding: 0 20px 20px !important; scroll-padding-left: 20px; scroll-snap-type: x mandatory; }
+    .st-root .gal figure { width: 76% !important; scroll-snap-align: start !important; }
+    .st-root .gal figure:nth-child(1) { order: 1; }
+    .st-root .gal figure:nth-child(n+9) { order: 2; }
+    .st-root .gal img { height: auto !important; aspect-ratio: 4/5; }
+    .st-visit { padding: 36px 20px 56px !important; }
+    .st-visit-g { gap: 36px !important; }
+    .st-place { font-size: 32px !important; }
+    .st-foot { padding: 0 20px 40px !important; }
+    .st-mbar-wrap { display: block; position: sticky; top: 0; height: 0; z-index: 8; }
+    .st-mbar { position: absolute; left: 0; right: 0; top: 0; height: 52px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 20px; background: #F5F1E9; border-bottom: 1px solid #DED6C7; color: #1B1B19; transform: translateY(-101%); transition: transform .28s ease; }
+    .st-root[data-mbar="show"] .st-mbar { transform: none; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    @container st (min-width: 761px) {
+      .st-hero-img { translate: 0 var(--hy, 0px); }
+      .st-root[data-fx="on"] .st-hero-img { animation: stZoomD 2.6s cubic-bezier(.19,1,.22,1) both; }
+      .st-root[data-fx="on"] .st-h1 { animation: stUp 1.1s cubic-bezier(.19,1,.22,1) .15s both; }
+      .st-root[data-fx="on"] .st-tag { animation: stUp 1.1s cubic-bezier(.19,1,.22,1) .35s both; }
+      .st-root[data-fx="on"] .st-cta { animation: stUp 1.1s cubic-bezier(.19,1,.22,1) .5s both; }
+      .st-root[data-fx="on"] .st-fig .frm img { position: absolute; left: 0; top: -56px; height: calc(100% + 112px) !important; translate: 0 var(--fy, 0px); will-change: translate; }
+      .st-root[data-fx="on"] .st-menu-ph img { top: -16px !important; height: calc(100% + 32px) !important; object-position: 50% 100% !important; translate: 0 var(--my, 0px); will-change: translate, transform; }
+    }
+    @container st (max-width: 760px) {
+      .st-root[data-fx="on"] .st-hero-img { animation: stZoom 2.6s cubic-bezier(.19,1,.22,1) both; }
+      .st-root[data-fx="on"] .st-h1 { animation: stUp 1.1s cubic-bezier(.19,1,.22,1) .15s both; }
+      .st-root[data-fx="on"] .st-tag { animation: stUp 1.1s cubic-bezier(.19,1,.22,1) .35s both; }
+      .st-root[data-fx="on"] .st-cta { animation: stUp 1.1s cubic-bezier(.19,1,.22,1) .5s both; }
+      .st-root[data-fx="on"] [data-rv="up"] { opacity: 0; transform: translate3d(0,22px,0); transition: opacity .9s ease, transform 1.1s cubic-bezier(.19,1,.22,1); }
+      .st-root[data-fx="on"] .st-fig .frm img { position: absolute; left: 0; top: -20px; height: calc(100% + 40px) !important; translate: 0 var(--fy, 0px); will-change: translate; }
+      .st-root[data-fx="on"] .st-menu-ph img { top: -20px !important; height: calc(100% + 40px) !important; object-position: 50% 100% !important; translate: 0 var(--my, 0px); will-change: translate; }
+      .st-root[data-fx="on"] [data-rv="clip"] { clip-path: inset(10% 12% 10% 12% round 6px); transition: clip-path 1.6s cubic-bezier(.19,1,.22,1); }
+      .st-root[data-fx="on"] [data-rv="clip"] img { scale: 1.14; transition: scale 1.8s cubic-bezier(.19,1,.22,1); }
+      .st-root[data-fx="on"] [data-rv][data-in] { opacity: 1; transform: none; clip-path: inset(0 0 0 0 round 0px); }
+      .st-root[data-fx="on"] [data-rv="clip"][data-in] img { scale: 1; }
+      .st-root[data-fx="on"] .st-tiles-g .tile:nth-child(even)[data-rv] { transition-delay: .1s; }
+    }
+  }
+</style>
+</helmet>
+
+<div class="st-root" data-mbar="{{ mbar }}" style="width:100%;overflow-x:clip">
+
+  <div class="st-mbar-wrap">
+    <div class="st-mbar">
+      <a href="#top" style="display:flex;align-items:center;min-height:44px;font-family:'EB Garamond',serif;font-size:22px;letter-spacing:.04em;color:#1B1B19">Θ|έρως</a>
+      <div style="display:flex;align-items:center;gap:18px">
+        <a href="{{ menuHref }}" style="display:flex;align-items:center;min-height:44px;font-size:12px;font-weight:600;letter-spacing:.18em;color:#1B1B19">{{ t.menuShort }}</a>
+        <nav style="display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.16em;color:#6B655B">
+          <a href="{{ hrefEn }}" onClick="{{ setEn }}" lang="en" style="color:{{ mEn }};display:flex;align-items:center;min-height:44px">EN</a>
+          <span aria-hidden="true" style="opacity:.45">/</span>
+          <a href="{{ hrefGr }}" onClick="{{ setGr }}" lang="el" style="color:{{ mGr }};display:flex;align-items:center;min-height:44px">GR</a>
+          <span aria-hidden="true" style="opacity:.45">/</span>
+          <a href="{{ hrefSr }}" onClick="{{ setSr }}" lang="sr-Latn" style="color:{{ mSr }};display:flex;align-items:center;min-height:44px">SR</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <header class="st-hdr" style="position:absolute;top:0;left:0;right:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:clamp(24px,2.9vw,40px) clamp(20px,5vw,56px) 0">
+    <a href="#top" style="font-family:'EB Garamond',serif;font-size:26px;letter-spacing:.04em;color:#FFF8EE">Θ|έρως</a>
+    <nav style="display:flex;align-items:center;gap:14px;font-size:12px;letter-spacing:.16em;color:rgba(255,248,238,.82)">
+      <a href="{{ hrefEn }}" onClick="{{ setEn }}" lang="en" style="color:{{ cEn }}">EN</a>
+      <span aria-hidden="true" style="opacity:.45">/</span>
+      <a href="{{ hrefGr }}" onClick="{{ setGr }}" lang="el" style="color:{{ cGr }}">GR</a>
+      <span aria-hidden="true" style="opacity:.45">/</span>
+      <a href="{{ hrefSr }}" onClick="{{ setSr }}" lang="sr-Latn" style="color:{{ cSr }}">SR</a>
+    </nav>
+  </header>
+
+  <section id="top" style="position:relative;overflow:hidden;min-height:100svh;display:flex;align-items:flex-end;background:#2A1C16">
+    <img class="st-hero-img" src="assets/theros-hero-6.jpg" alt="The terrace at Θ|έρως at sunset, bougainvillea and lit bamboo along the bar and the sun setting over the bay" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:0% 100%">
+    <div class="st-hero-c" style="position:relative;width:100%;padding:0 clamp(20px,5vw,56px) clamp(40px,4.4vw,60px)">
+      <h1 class="st-h1" style="font-family:'EB Garamond',serif;font-weight:500;font-size:clamp(74px,16.8vw,190px);line-height:.94;letter-spacing:-.01em;margin:0;color:#FFF8EE;text-shadow:0 1px 14px rgba(16,11,7,.32)">Θ|έρως</h1>
+      <p class="st-tag" style="max-width:34ch;margin:36px 0 12px;font-size:clamp(15px,1.6vw,17.5px);letter-spacing:.06em;line-height:1.6;color:rgba(255,248,238,.84);text-shadow:0 1px 10px rgba(16,11,7,.34)">{{ t.tagline }}</p>
+      <a class="st-cta" href="{{ menuHref }}" style="display:inline-block;padding:15px 30px;border-radius:6px;background:#FFF8EE;color:#1B1B19;font-size:13px;font-weight:500;letter-spacing:.18em;transition:background .25s ease" style-hover="background:#C9DCD3">{{ t.viewMenu }}</a>
+    </div>
+  </section>
+
+  <section class="st-hours" style="background:#F5F1E9;padding:clamp(28px,4vw,44px) 0 0">
+    <div class="st-wrap" style="max-width:1400px;margin:0 auto;padding:0 clamp(12px,2.5vw,24px)">
+      <div class="st-dayrow" data-rv="up" style="display:flex;flex-wrap:wrap;align-items:baseline;gap:12px 28px;padding:0 clamp(8px,1.5vw,16px) clamp(18px,2.5vw,26px)">
+        <p style="margin:0;font-size:11px;font-weight:600;letter-spacing:.24em;color:#4F7466">{{ t.day }}</p>
+        <p style="margin:0;font-size:12px;letter-spacing:.08em;color:#6B655B">{{ t.pick }}</p>
+      </div>
+
+      <div class="hourbox {{ activeCls }}">
+        <div role="tablist" aria-label="Hours" style="display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #D9D0C0">
+          <button class="tab" data-i="0" type="button" role="tab" aria-selected="{{ sel0 }}" onClick="{{ pick0 }}">
+            <span class="st-tabl" style="font-size:clamp(13px,2.2vw,15px);font-weight:600;letter-spacing:.16em">{{ t.tab0 }}</span>
+            <span style="font-size:11px;letter-spacing:.1em;opacity:.6">{{ t.tab0s }}</span>
+          </button>
+          <button class="tab" data-i="1" type="button" role="tab" aria-selected="{{ sel1 }}" onClick="{{ pick1 }}">
+            <span class="st-tabl" style="font-size:clamp(13px,2.2vw,15px);font-weight:600;letter-spacing:.16em">{{ t.tab1 }}</span>
+            <span style="font-size:11px;letter-spacing:.1em;opacity:.6">{{ t.tab1s }}</span>
+          </button>
+          <button class="tab" data-i="2" type="button" role="tab" aria-selected="{{ sel2 }}" onClick="{{ pick2 }}">
+            <span class="st-tabl" style="font-size:clamp(13px,2.2vw,15px);font-weight:600;letter-spacing:.16em">{{ t.tab2 }}</span>
+            <span style="font-size:11px;letter-spacing:.1em;opacity:.6">{{ t.tab2s }}</span>
+          </button>
+        </div>
+
+        <figure class="st-fig" data-rv="clip" onTouchStart="{{ tStart }}" onTouchEnd="{{ tEnd }}" style="margin:0;position:relative;background:#241B15;overflow:hidden;height:clamp(460px,64vw,800px)">
+          <div class="frm" data-i="0" style="position:absolute;inset:0">
+            <img loading="lazy" decoding="async" src="assets/theros-coffee-final.jpg" alt="Greek coffee, a freddo and cherry spoon sweet on a rattan table under the reed roof, with the bar behind" style="width:100%;height:100%;object-fit:cover;object-position:50% 33%">
+          </div>
+          <div class="frm" data-i="1" style="position:absolute;inset:0">
+            <img loading="lazy" decoding="async" src="assets/theros-sunset-mirror.jpg" alt="The terrace at sunset under bougainvillea, rattan chairs and the bay reflected in the bar's mirror" style="width:100%;height:100%;object-fit:cover;object-position:50% 58%">
+          </div>
+          <div class="frm" data-i="2" style="position:absolute;inset:0">
+            <img loading="lazy" decoding="async" src="assets/theros-evening.jpg" alt="Two red cocktails with lime wheels on a dark tray at the bar, with bougainvillea and the lit terrace behind" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%">
+          </div>
+          <figcaption class="st-cap" style="position:absolute;left:0;bottom:0;right:0;z-index:2;display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding:clamp(18px,3vw,30px);background:linear-gradient(to top,rgba(16,12,9,.55),rgba(16,12,9,0))">
+            <span class="st-capt" style="font-family:'EB Garamond',serif;font-size:clamp(20px,3vw,32px);line-height:1.15;color:#FFF8EE">{{ activeCaption }}</span>
+            <span style="font-size:11px;letter-spacing:.2em;color:rgba(255,248,238,.7)">{{ activeIndex }}</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="st-tiles" style="background:#F5F1E9;padding:clamp(10px,1.6vw,18px) 0 0">
+    <div class="st-tiles-g" style="max-width:1400px;margin:0 auto;padding:0 clamp(12px,2.5vw,24px);display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:clamp(10px,1.6vw,18px)">
+      <div class="tile" data-rv="clip" style="position:relative;overflow:hidden;background:#241B15;aspect-ratio:3/5">
+        <img loading="lazy" decoding="async" src="assets/theros-gallery-terrace-sunset.jpg" alt="Rattan armchairs, glass-topped tables and a striped-cushion sofa on the terrace, the sun setting behind the mountains across the sea" style="width:100%;height:100%;object-fit:cover;object-position:50% 0%">
+      </div>
+      <div class="tile" data-rv="clip" style="position:relative;overflow:hidden;background:#241B15;aspect-ratio:3/5">
+        <img loading="lazy" decoding="async" src="assets/theros-gallery-bar-evening.jpg" alt="The bar framed in red bougainvillea under the reed roof, with the blue neon Θ|έρως sign, lit bottle shelves and white rush-seat stools in evening light" style="position:absolute;right:0;bottom:0;width:119%;height:119%;object-fit:cover;object-position:100% 100%;transform-origin:100% 100%">
+      </div>
+      <div class="tile" data-rv="clip" style="position:relative;overflow:hidden;background:#241B15;aspect-ratio:3/5">
+        <img loading="lazy" decoding="async" src="assets/theros-gallery-bartender-pour.jpg" alt="The bartender double-straining an amber cocktail from a frosted shaker into a coupe on the wooden bar, mint shutters behind" style="width:100%;height:100%;object-fit:cover;object-position:50% 55%">
+      </div>
+      <div class="tile" data-rv="clip" style="position:relative;overflow:hidden;background:#241B15;aspect-ratio:3/5">
+        <img loading="lazy" decoding="async" src="assets/theros-gallery-cheers.jpg" alt="Two guests raising a berry and orange spritz and a blue layered cocktail at a wooden table, lights of the waterfront behind" style="width:100%;height:100%;object-fit:cover;object-position:0% 50%">
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="st-menu" style="background:#F5F1E9;padding:clamp(40px,6vw,72px) clamp(12px,2.5vw,24px) clamp(36px,5vw,64px)">
+    <div class="st-menu-g" style="max-width:1400px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+      <div class="st-panel" style="background:#C9DCD3;color:#1B1B19;padding:clamp(32px,5vw,56px);display:flex;flex-direction:column;justify-content:space-between;gap:clamp(28px,4vw,48px);min-height:max(475px,calc(95svh + 61px))">
+        <div data-rv="up" style="display:flex;flex-direction:column;gap:14px">
+          <p style="margin:0;font-size:11px;font-weight:600;letter-spacing:.24em;color:#3D6153">{{ t.list }}</p>
+          <p class="st-ctc" style="margin:0;font-family:'EB Garamond',serif;font-size:clamp(34px,5.6vw,64px);line-height:1;letter-spacing:-.01em">{{ t.ctc1 }}<br>{{ t.ctc2 }}</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:18px">
+          <a class="st-mbtn" href="{{ menuHref }}" style="display:inline-flex;align-items:center;gap:12px;padding:16px 28px;border-radius:6px;background:#1B1B19;color:#FFF8EE;font-size:13px;font-weight:600;letter-spacing:.18em;transition:background .25s ease" style-hover="background:#3D6153">
+            {{ t.viewMenu }}
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"></path></svg>
+          </a>
+          <p style="margin:0;font-size:12px;letter-spacing:.12em;color:#3D6153">{{ t.cats }}</p>
+        </div>
+      </div>
+      <div class="tile st-menu-ph" data-rv="clip" style="position:relative;overflow:hidden;background:#241B15;min-height:max(475px,calc(95svh + 61px))">
+        <img loading="lazy" decoding="async" src="assets/theros-menu-tiki.jpg" alt="A red margarita with a lime wheel and a green tiki mug cocktail on the bar, bottles and mint shutters behind" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 90%">
+      </div>
+    </div>
+  </section>
+
+  <section class="st-dark" style="background:linear-gradient(to bottom,#F5F1E9 0%,#EAE7DF 0.63%,#DCD8D2 1.26%,#CCC8C3 1.89%,#BBB8B3 2.52%,#ABA8A4 3.15%,#9B9996 3.78%,#8C8A88 4.41%,#7E7C7B 5.04%,#726F6E 5.67%,#666463 6.3%,#5B5959 6.93%,#515050 7.56%,#494748 8.19%,#414041 8.82%,#3B393B 9.45%,#353436 10.08%,#312F32 10.71%,#2D2B2E 11.34%,#29282B 11.97%,#272628 12.6%,#242326 13.23%,#232225 13.86%,#222123 14.49%,#212023 15.12%,#201F22 15.75%,#201F22 16.38%,#1F1E21 17.01%,#1F1E21 17.64%,#1F1E21 18.27%,#1F1E21 18.9%,#1F1E21 19.53%,#1F1E21 20.16%,#17171A 100%);padding:clamp(32px,5vw,58px) 0 clamp(40px,5.5vw,66px);color:#F5F1E9">
+    <div class="st-dark-h" data-rv="up" style="max-width:1100px;margin:0 auto;padding:0 clamp(20px,5vw,56px);display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:last baseline">
+      <p class="st-dark-t" style="margin:0;font-family:'EB Garamond',serif;font-size:clamp(26px,4vw,42px);line-height:1.2;max-width:20ch">{{ t.afterDark }}</p>
+      <p style="margin:0;font-size:11px;letter-spacing:.2em;color:rgba(245,241,233,.55)">{{ t.scroll }}</p>
+    </div>
+    <div class="gal" data-rv="up" style="margin-top:clamp(20px,2.2vw,28px);display:flex;gap:clamp(16px,2.5vw,28px);overflow-x:auto;scroll-snap-type:x mandatory;padding:0 clamp(20px,5vw,56px) 24px;-webkit-overflow-scrolling:touch">
+      <figure style="margin:0;flex:0 0 auto;width:min(66vw,330px);scroll-snap-align:center">
+        <img loading="lazy" decoding="async" src="assets/theros-afterdark-harbour-stools.jpg" alt="White bar stools and high tables beside lit bamboo, guests on the waterfront and boats in the harbour under a red sunset sky" style="width:100%;height:min(110vw,550px);object-fit:cover;object-position:50% 50%;filter:brightness(.8)">
+        <figcaption style="margin-top:12px;font-size:12px;color:rgba(245,241,233,.6)">{{ t.g0 }}</figcaption>
+      </figure>
+      <figure style="margin:0;flex:0 0 auto;width:min(66vw,330px);scroll-snap-align:center">
+        <img loading="lazy" decoding="async" src="assets/theros-afterdark-amber-martini.jpg" alt="A Porn Star cocktail in an etched martini glass on a round wooden table beside a candle, the lit terrace and bougainvillea blurred behind" style="width:100%;height:min(110vw,550px);object-fit:cover;object-position:50% 60%;filter:brightness(.8)">
+        <figcaption style="margin-top:12px;font-size:12px;color:rgba(245,241,233,.6)">{{ t.g1 }}</figcaption>
+      </figure>
+      <figure style="margin:0;flex:0 0 auto;width:min(66vw,330px);scroll-snap-align:center">
+        <img loading="lazy" decoding="async" src="assets/theros-menu-blue-aegean.jpg" alt="A Blue Aegean in a cut-crystal highball with a purple straw, beside a bowl of pineapple and strawberries, bougainvillea lit behind" style="width:100%;height:min(110vw,550px);object-fit:cover;object-position:50% 60%;filter:brightness(.8)">
+        <figcaption style="margin-top:12px;font-size:12px;color:rgba(245,241,233,.6)">{{ t.g2 }}</figcaption>
+      </figure>
+      <figure style="margin:0;flex:0 0 auto;width:min(66vw,330px);scroll-snap-align:center">
+        <img loading="lazy" decoding="async" src="assets/theros-afterdark-bartender.jpg" alt="The bartender pouring vodka into a jigger over two steel shakers, bottles and mint shutters behind" style="width:100%;height:min(110vw,550px);object-fit:cover;object-position:50% 86%;filter:brightness(.8)">
+        <figcaption style="margin-top:12px;font-size:12px;color:rgba(245,241,233,.6)">{{ t.g3 }}</figcaption>
+      </figure>
+      <figure style="margin:0;flex:0 0 auto;width:min(66vw,330px);scroll-snap-align:center">
+        <img loading="lazy" decoding="async" src="assets/theros-afterdark-cucumber-cooler.jpg" alt="A Kontail, a green cucumber cocktail, with a green straw on the wooden bar beside a dish of grapes and sliced peaches, shakers and mint shutters behind" style="width:100%;height:min(110vw,550px);object-fit:cover;object-position:50% 50%;filter:brightness(.8)">
+        <figcaption style="margin-top:12px;font-size:12px;color:rgba(245,241,233,.6)">{{ t.g4 }}</figcaption>
+      </figure>
+      <figure style="margin:0;flex:0 0 auto;width:min(66vw,330px);scroll-snap-align:center">
+        <img loading="lazy" decoding="async" src="assets/theros-afterdark-mojitos-fruit.jpg" alt="Two mojitos in cut-glass tumblers with mint, lime and lavender sprigs beside a dish of green grapes and sliced peaches on the bar, warm lights behind" style="width:100%;height:min(110vw,550px);object-fit:cover;object-position:50% 50%;filter:brightness(.8)">
+        <figcaption style="margin-top:12px;font-size:12px;color:rgba(245,241,233,.6)">{{ t.g5 }}</figcaption>
+      </figure>
+      <figure style="margin:0;flex:0 0 auto;width:min(66vw,330px);scroll-snap-align:center">
+        <img loading="lazy" decoding="async" src="assets/theros-afterdark-margaritas.jpg" alt="Two salt-rimmed margaritas with lime wheels on a dark tray beside a bowl of green grapes, lit bamboo and pink bougainvillea behind" style="width:100%;height:min(110vw,550px);object-fit:cover;object-position:50% 50%;filter:brightness(.8)">
+        <figcaption style="margin-top:12px;font-size:12px;color:rgba(245,241,233,.6)">{{ t.g6 }}</figcaption>
+      </figure>
+      <figure style="margin:0;flex:0 0 auto;width:min(66vw,330px);scroll-snap-align:center">
+        <img loading="lazy" decoding="async" src="assets/theros-afterdark-garnish.jpg" alt="The bartender garnishing a red margarita under a woven pendant lamp, backlit bottles and the blue neon Θ|έρως sign behind" style="width:100%;height:min(110vw,550px);object-fit:cover;object-position:50% 58%;filter:brightness(.8)">
+        <figcaption style="margin-top:12px;font-size:12px;color:rgba(245,241,233,.6)">{{ t.g7 }}</figcaption>
+      </figure>
+      <figure style="margin:0;flex:0 0 auto;width:min(66vw,330px);scroll-snap-align:center">
+        <img loading="lazy" decoding="async" src="assets/theros-afterdark-spritz-glow.jpg" alt="An orange spritz in a wine glass on a terrace table lit by a glowing green lamp, with olives, a water bottle and guests at night behind" style="width:100%;height:min(110vw,550px);object-fit:cover;object-position:50% 50%;filter:brightness(.8)">
+        <figcaption style="margin-top:12px;font-size:12px;color:rgba(245,241,233,.6)">{{ t.g8 }}</figcaption>
+      </figure>
+      <figure style="margin:0;flex:0 0 auto;width:min(66vw,330px);scroll-snap-align:center">
+        <img loading="lazy" decoding="async" src="assets/theros-afterdark-spritz.jpg" alt="A Jack Sparrow cocktail with berries and citrus in a balloon glass on the bar at night, lit bamboo behind" style="width:100%;height:min(110vw,550px);object-fit:cover;object-position:15% 50%;filter:brightness(.8)">
+        <figcaption style="margin-top:12px;font-size:12px;color:rgba(245,241,233,.6)">{{ t.g9 }}</figcaption>
+      </figure>
+      <figure style="margin:0;flex:0 0 auto;width:min(66vw,330px);scroll-snap-align:center">
+        <img loading="lazy" decoding="async" src="assets/theros-afterdark-pizza-wine.jpg" alt="Looking down through a glass of sparkling white wine at a sliced pizza with ham and green peppers, lit by a candle lantern" style="width:100%;height:min(110vw,550px);object-fit:cover;object-position:50% 50%;filter:brightness(.8)">
+        <figcaption style="margin-top:12px;font-size:12px;color:rgba(245,241,233,.6)">{{ t.g10 }}</figcaption>
+      </figure>
+      <figure style="margin:0;flex:0 0 auto;width:min(66vw,330px);scroll-snap-align:center">
+        <img loading="lazy" decoding="async" src="assets/theros-afterdark-moscato.jpg" alt="A Θ|έρως Moscato Riou bottle lamp glowing on a table, the sun setting over the sea behind" style="width:100%;height:min(110vw,550px);object-fit:cover;object-position:50% 50%;filter:brightness(.8)">
+        <figcaption style="margin-top:12px;font-size:12px;color:rgba(245,241,233,.6)">{{ t.g11 }}</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="st-visit" style="background:#17171A;color:#F5F1E9;padding:clamp(40px,5.5vw,66px) clamp(20px,5vw,56px) clamp(72px,10vw,120px)">
+    <div class="st-visit-g" style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(32px,5vw,64px);align-items:end">
+      <div data-rv="up">
+        <p style="margin:0 0 20px;font-size:11px;letter-spacing:.22em;color:#A9C6BA">{{ t.visit }}</p>
+        <p class="st-place" style="margin:0;font-family:'EB Garamond',serif;font-size:clamp(28px,4.4vw,48px);line-height:1.15">{{ t.place }}</p>
+        <p style="margin:18px 0 0;font-size:17px;line-height:1.65;max-width:40ch;color:rgba(245,241,233,.72)">{{ t.find }}</p>
+      </div>
+      <div data-rv="up" style="display:flex;flex-direction:column;gap:2px">
+        <a href="https://maps.app.goo.gl/4SebSYdMextND4Ly6" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;border-top:1px solid rgba(245,241,233,.22);font-size:14px;letter-spacing:.06em;transition:color .2s ease" style-hover="color:#A9C6BA">
+          <span>{{ t.maps }}</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+        </a>
+        <a href="https://www.instagram.com/theros_cocktail_wine_bar/" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;border-top:1px solid rgba(245,241,233,.22);border-bottom:1px solid rgba(245,241,233,.22);font-size:14px;letter-spacing:.06em;transition:color .2s ease" style-hover="color:#A9C6BA">
+          <span>Instagram</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17" cy="7" r="1"></circle></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="st-foot" style="background:#17171A;color:rgba(245,241,233,.5);padding:0 clamp(20px,5vw,56px) 48px">
+    <div style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:12px;letter-spacing:.1em">
+      <span style="display:inline-flex;align-items:baseline;gap:14px"><span style="font-family:'EB Garamond',serif;font-size:16px;letter-spacing:.04em;color:rgba(245,241,233,.8)">Θ|έρως</span><span style="font-size:10px;letter-spacing:.22em;color:rgba(245,241,233,.5)">© 2026</span></span>
+      <span>{{ t.loc }}</span>
+    </div>
+  </footer>
+
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { hour: 0, lang: Component.readLang(), mbar: 'hide' };
+
+  static readLang() {
+    try {
+      const ok = ['en', 'gr', 'sr'];
+      const q = new URLSearchParams(location.search).get('lang');
+      if (ok.includes(q)) return q;
+      const s = localStorage.getItem('theros-lang');
+      if (ok.includes(s)) return s;
+    } catch (e) {}
+    return 'en';
+  }
+
+  setLang(l) {
+    try { localStorage.setItem('theros-lang', l); } catch (e) {}
+    try { const u = new URL(location.href); if (l === 'en') u.searchParams.delete('lang'); else u.searchParams.set('lang', l); history.replaceState(null, '', u.toString()); } catch (e) {}
+    this.setState({ lang: l });
+  }
+
+  strings = {
+    en: { tagline: 'Between the sea and the cocktail. Pefki, North Evia.', viewMenu: 'VIEW MENU', day: 'ONE DAY, FACING THE WATER', pick: 'Pick an hour', tab0: 'COFFEE', tab0s: 'Slow mornings', tab1: 'SUNSET', tab1s: 'Last light', tab2: 'EVENING', tab2s: 'After dark', list: 'THE LIST', ctc1: 'Coffee to', ctc2: 'cocktails.', cats: '6 CATEGORIES', afterDark: 'After dark, Island Rhythms.', scroll: 'SCROLL SIDEWAYS →', visit: 'VISIT', place: 'Pefki, North Evia, Greece', find: 'On the waterfront. Look for the mint shutters and the bougainvillea.', maps: 'Open in Maps', loc: 'PEFKI, NORTH EVIA', menuShort: 'MENU',
+      caps: ['Sea breeze, first coffee.', 'The sun lands straight ahead.', 'One more round, under the stars.'],
+      gal: ['Harbour, sunset', 'Amber, after dark', 'Blue Aegean', 'The first pour', 'Kontail, early evening', 'Mojitos, made for two', 'Margaritas, twilight', 'Behind the bar', 'Spritz, late night', 'Jack Sparrow, night', 'Pizza and a glass of white', 'Moscato, last light'] },
+    gr: { tagline: 'Ανάμεσα στη θάλασσα και το κοκτέιλ. Πευκί, Βόρεια Εύβοια.', viewMenu: 'ΔΕΙΤΕ ΤΟ ΜΕΝΟΥ', day: 'ΜΙΑ ΜΕΡΑ, ΜΠΡΟΣΤΑ ΣΤΗ ΘΑΛΑΣΣΑ', pick: 'Διαλέξτε ώρα', tab0: 'ΚΑΦΕΣ', tab0s: 'Χαλαρά πρωινά', tab1: 'ΔΥΣΗ', tab1s: 'Το τελευταίο φως', tab2: 'ΒΡΑΔΥ', tab2s: 'Όταν νυχτώνει', list: 'Ο ΚΑΤΑΛΟΓΟΣ', ctc1: 'Από τον καφέ', ctc2: 'στο κοκτέιλ.', cats: '6 ΚΑΤΗΓΟΡΙΕΣ', afterDark: 'Όταν νυχτώνει, ρυθμοί του νησιού.', scroll: 'ΣΥΡΕΤΕ ΠΛΑΓΙΑ →', visit: 'ΕΠΙΣΚΕΦΘΕΙΤΕ ΜΑΣ', place: 'Πευκί, Βόρεια Εύβοια, Ελλάδα', find: 'Πάνω στην παραλία. Ψάξτε τα παντζούρια στο χρώμα της μέντας και τη βουκαμβίλια.', maps: 'Άνοιγμα στους Χάρτες', loc: 'ΠΕΥΚΙ, ΒΟΡΕΙΑ ΕΥΒΟΙΑ', menuShort: 'ΜΕΝΟΥ',
+      caps: ['Θαλασσινό αεράκι, πρώτος καφές.', 'Ο ήλιος δύει ακριβώς απέναντι.', 'Άλλος ένας γύρος, κάτω από τα αστέρια.'],
+      gal: ['Λιμάνι, ηλιοβασίλεμα', 'Κεχριμπάρι, όταν νυχτώνει', 'Blue Aegean', 'Το πρώτο σερβίρισμα', 'Kontail, νωρίς το βράδυ', 'Mojito για δύο', 'Margarita, σούρουπο', 'Πίσω από το μπαρ', 'Spritz, αργά τη νύχτα', 'Jack Sparrow, νύχτα', 'Πίτσα και ένα ποτήρι λευκό', 'Moscato, το τελευταίο φως'] },
+    sr: { tagline: 'Između mora i koktela. Pefki, Severna Evija.', viewMenu: 'POGLEDAJTE MENI', day: 'JEDAN DAN, S POGLEDOM NA MORE', pick: 'Izaberite doba dana', tab0: 'KAFA', tab0s: 'Lagana jutra', tab1: 'ZALAZAK', tab1s: 'Poslednji zraci', tab2: 'VEČE', tab2s: 'Kad padne mrak', list: 'KARTA PIĆA', ctc1: 'Od kafe', ctc2: 'do koktela.', cats: '6 KATEGORIJA', afterDark: 'Kad padne mrak, ritmovi ostrva.', scroll: 'POMERAJTE U STRANU →', visit: 'POSETITE NAS', place: 'Pefki, Severna Evija, Grčka', find: 'Na šetalištu uz more. Potražite škure boje mente i bugenviliju.', maps: 'Otvori u Mapama', loc: 'PEFKI, SEVERNA EVIJA', menuShort: 'MENI',
+      caps: ['Morski povetarac, prva kafa.', 'Sunce zalazi pravo pred nama.', 'Još jedna tura, pod zvezdama.'],
+      gal: ['Luka, zalazak sunca', 'Ćilibar, kad padne mrak', 'Blue Aegean', 'Prvo točenje', 'Kontail, rano veče', 'Mojito za dvoje', 'Margarite, sumrak', 'Iza šanka', 'Spritz, kasno noću', 'Jack Sparrow, noć', 'Pica i čaša belog', 'Moscato, poslednji zraci'] }
+  };
+
+  componentDidMount() {
+    this.syncLang();
+    setTimeout(() => this.initFx(), 60);
+  }
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+    if (this._onScroll) { window.removeEventListener('scroll', this._onScroll); window.removeEventListener('resize', this._onScroll); }
+  }
+  initFx() {
+    const root = document.querySelector('.st-root');
+    if (!root) return;
+    const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduce && window.IntersectionObserver) {
+      root.setAttribute('data-fx', 'on');
+      this._io = new IntersectionObserver(es => es.forEach(e => {
+        if (e.isIntersecting) { e.target.setAttribute('data-in', ''); this._io.unobserve(e.target); }
+      }), { rootMargin: '0px 0px -10% 0px' });
+      root.querySelectorAll('[data-rv]').forEach(el => this._io.observe(el));
+    }
+    const hero = root.querySelector('.st-hero-img');
+    const hdr = root.querySelector('.st-hdr');
+    const fig = root.querySelector('.st-fig');
+    const mph = root.querySelector('.st-menu-ph');
+    let raf = 0;
+    const tick = () => {
+      raf = 0;
+      const y = window.scrollY, mobile = root.clientWidth <= 760, vh = window.innerHeight;
+      const hb = hdr ? hdr.getBoundingClientRect().bottom : null;
+      const fr = fig ? fig.getBoundingClientRect() : null;
+      const mr = mph ? mph.getBoundingClientRect() : null;
+      const near = r => r && r.bottom > -200 && r.top < vh + 200;
+      const lin = (r, amp) => -amp * Math.max(-1, Math.min(1, ((r.top + r.height / 2) - vh / 2) / (vh / 2 + r.height / 2)));
+      if (!reduce) {
+        if (hero) hero.style.setProperty('--hy', (Math.min(y, vh) * (mobile ? 0.28 : 0.18)).toFixed(1) + 'px');
+        if (near(fr)) {
+          const off = mobile ? lin(fr, 20) + 0.28 * (Math.min(fr.height, Math.max(0, -fr.top)) - Math.min(fr.height, Math.max(0, fr.bottom - vh))) : Math.max(-56, Math.min(56, -((fr.top + fr.height / 2) - vh / 2) * 0.18));
+          fig.style.setProperty('--fy', off.toFixed(2) + 'px');
+        }
+        if (near(mr)) {
+          const off = mobile ? lin(mr, 20) : Math.max(-16, Math.min(16, -((mr.top + mr.height / 2) - vh / 2) * 0.18));
+          mph.style.setProperty('--my', off.toFixed(2) + 'px');
+        }
+      }
+      const gone = hb != null ? hb <= 0 : y > 120;
+      const m = gone ? 'show' : 'hide';
+      if (m !== this.state.mbar) this.setState({ mbar: m });
+    };
+    this._onScroll = () => { if (!raf) raf = requestAnimationFrame(tick); };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    window.addEventListener('resize', this._onScroll);
+    tick();
+  }
+  componentDidUpdate() { this.syncLang(); }
+  syncLang() { const l = this.state.lang; document.documentElement.lang = l === 'gr' ? 'el' : l === 'sr' ? 'sr-Latn' : 'en'; }
+
+  renderVals() {
+    const active = this.state.hour;
+    const lang = this.state.lang;
+    const S = this.strings[lang] || this.strings.en;
+    const t = { ...S };
+    S.gal.forEach((g, i) => { t['g' + i] = g; });
+    const q = l => l === 'en' ? '' : '?lang=' + l;
+    const on = '#FFF8EE';
+    return {
+      t,
+      menuHref: 'menu.html' + q(lang),
+      hrefEn: '?', hrefGr: '?lang=gr', hrefSr: '?lang=sr',
+      cEn: lang === 'en' ? on : 'inherit', cGr: lang === 'gr' ? on : 'inherit', cSr: lang === 'sr' ? on : 'inherit',
+      setEn: e => { e.preventDefault(); this.setLang('en'); },
+      setGr: e => { e.preventDefault(); this.setLang('gr'); },
+      setSr: e => { e.preventDefault(); this.setLang('sr'); },
+      mbar: this.state.mbar,
+      mEn: lang === 'en' ? '#1B1B19' : 'inherit', mGr: lang === 'gr' ? '#1B1B19' : 'inherit', mSr: lang === 'sr' ? '#1B1B19' : 'inherit',
+      tStart: e => { const p = e.touches && e.touches[0]; this._tx = p ? p.clientX : null; this._ty = p ? p.clientY : null; },
+      tEnd: e => {
+        const p = e.changedTouches && e.changedTouches[0];
+        if (!p || this._tx == null) return;
+        const dx = p.clientX - this._tx, dy = p.clientY - this._ty;
+        if (Math.abs(dx) > 44 && Math.abs(dx) > Math.abs(dy) * 1.4) this.setState(s => ({ hour: (s.hour + (dx < 0 ? 1 : 2)) % 3 }));
+        this._tx = null;
+      },
+      activeCls: 'h' + active,
+      activeCaption: S.caps[active],
+      activeIndex: '0' + (active + 1) + ' / 03',
+      sel0: active === 0 ? 'true' : 'false',
+      sel1: active === 1 ? 'true' : 'false',
+      sel2: active === 2 ? 'true' : 'false',
+      pick0: () => this.setState({ hour: 0 }),
+      pick1: () => this.setState({ hour: 1 }),
+      pick2: () => this.setState({ hour: 2 })
+    };
+  }
+}
+</script>
+</body>
+</html>
