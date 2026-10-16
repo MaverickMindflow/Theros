@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -346,7 +349,7 @@ class Component extends DCLogic {
     const w = (name, grapes, bottle, glass) => ({ name, grapes, bottle: e(bottle), glass: e(glass) });
     return [
       { id: 'coffee', nav: 'COFFEES - BEVERAGES', title: 'Coffees - Beverages', kind: 'simple',
-        photo: 'assets/theros-menu-cup.jpg', photoAlt: 'An iced coffee in a Θ|έρως Evia Island cup on a white ledge, with bougainvillea and the sea behind', photo2: 'assets/theros-menu-coffee-table.jpg', photo2Alt: 'A freddo espresso, a Greek coffee, iced water and cherry spoon sweet on a rattan table, with the bar and bougainvillea behind',
+        photo: 'assets/theros-menu-cup.webp', photoAlt: 'An iced coffee in a Θ|έρως Evia Island cup on a white ledge, with bougainvillea and the sea behind', photo2: 'assets/theros-menu-coffee-table.webp', photo2Alt: 'A freddo espresso, a Greek coffee, iced water and cherry spoon sweet on a rattan table, with the bar and bougainvillea behind',
         items: [
           s('Greek Coffee','2,50'), s('Double Greek Coffee','3,00'), s('Frappe','3,00'), s('Espresso','2,50'),
           s('Double Espresso','3,00'), s('Cappuccino','3,00'), s('Double Cappuccino','3,50'), s('Cappuccino Latte','3,50'),
@@ -363,7 +366,7 @@ class Component extends DCLogic {
           s('Yamas Cold Tea Peach 360ml','3,50'), s('Yamas Cold Tea Lemon 360ml','3,50'), s('Yamas Cold Tea blueberries 360ml','3,50')
         ]},
       { id: 'wine', nav: 'WINE SELECTION FROM EVIA', title: 'Wine Selection from Evia', kind: 'wine',
-        photo: 'assets/theros-wine-sunset-trio.jpg', photoAlt: 'Three Θ|έρως bottles, Moscato rosé, Malagouzia and Syrah, on a wooden table with the sun setting over the sea', dPos: '50% 12%', photo2: 'assets/theros-wine-trio.jpg', photo2Alt: 'Three Θ|έρως bottles, Moschato rosé, Malagouzia and Syrah, on a wooden table at sunset with the sea behind', pos2: '50% 85%',
+        photo: 'assets/theros-wine-sunset-trio.webp', photoAlt: 'Three Θ|έρως bottles, Moscato rosé, Malagouzia and Syrah, on a wooden table with the sun setting over the sea', dPos: '50% 12%', photo2: 'assets/theros-wine-trio.webp', photo2Alt: 'Three Θ|έρως bottles, Moschato rosé, Malagouzia and Syrah, on a wooden table at sunset with the sea behind', pos2: '50% 85%',
         groups: [
           { title: 'WHITE WINE', items: [
             w('ΘΕΡΩΣ 500ml','Malagouzia','9,50',''),
@@ -396,7 +399,7 @@ class Component extends DCLogic {
           ]}
         ]},
       { id: 'cocktails', nav: 'COCKTAILS', title: 'Cocktails', kind: 'detailed',
-        photo: 'assets/theros-menu-blue-aegean.jpg', photoAlt: 'A Blue Aegean in a cut-crystal highball with a purple straw, beside a bowl of pineapple and strawberries, bougainvillea lit behind', dPos: '50% 80%', photo2: 'assets/theros-menu-strawberry-daiquiri.jpg', photo2Alt: 'A sugar-rimmed Strawberry Daiquiri with a lime wheel, beside a bowl of peach and grapes on the terrace at night', pos2: '50% 80%',
+        photo: 'assets/theros-menu-blue-aegean-1080.webp', photoAlt: 'A Blue Aegean in a cut-crystal highball with a purple straw, beside a bowl of pineapple and strawberries, bougainvillea lit behind', dPos: '50% 80%', photo2: 'assets/theros-menu-strawberry-daiquiri.webp', photo2Alt: 'A sugar-rimmed Strawberry Daiquiri with a lime wheel, beside a bowl of peach and grapes on the terrace at night', pos2: '50% 80%',
         items: [
           d('Margarita Frozen lemon','Tequila blanco, tequila reposado, homemade lemonade with ginger, triple sec','10,00'),
           d('Last word','Gin, lemon juice, syrup ginger, cucumber, chili, spearmint','8,50'),
